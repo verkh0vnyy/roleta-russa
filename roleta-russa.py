@@ -2,7 +2,7 @@ import os
 import random
 
 escolha = random.randint(1,10)
-morte = random.randint(1.10)
+morte = random.randint(1,10)
 
 def bomb(Length):
     number = '0123456789'
