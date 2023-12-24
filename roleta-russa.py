@@ -22,6 +22,8 @@ def detectsystem():
         os.system("cls")
         system = "windows"
 
+detectsystem()
+
 if system == "linux":
 
     if deathorlive == 5:
