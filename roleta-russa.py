@@ -15,6 +15,7 @@ def bomb(Length):
     return id
 
 def detectsystem():
+    global system
     try:
         os.system("clear")
         system = "linux"
